@@ -9,6 +9,10 @@ public class SwichCaseConcept {
 		switch (browser.toLowerCase().trim()) {
 		case "chrome":
 			System.out.println("launch chrome");
+			double version = 1.31;
+			if (version == 1.31) {
+				System.out.println("1.31 chrome");
+			}
 			break;
 		case "firefox":
 			System.out.println("launch firefox");
