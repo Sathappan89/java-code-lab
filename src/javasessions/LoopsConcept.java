@@ -113,38 +113,49 @@ public class LoopsConcept {
 		}
 
 		System.out.println("-----------------------Double loop------------------------------");
-		
-		for(double d=1.0;d<=5.0;d++) {
+
+		for (double d = 1.0; d <= 5.0; d++) {
 			System.out.println(d);
 		}
-		
-		
+
 		// use cases : While loop
-		
+
 		/*
-		 * 1. When number of iterations are not fixed
-		 * Example
-		 * Waiting for the element on the page:0,5,10,15,20,25
-		 * Waiting for the page loading : 0,5,10,15,20
-		 * Calendar Handling
-		 * WebTable Pagination Handling
-		 * Linkedin/FB/Insta : Infinite scrolling
-		 * food delivery
-		 * carousel
+		 * 1. When number of iterations are not fixed Example Waiting for the element on
+		 * the page:0,5,10,15,20,25 Waiting for the page loading : 0,5,10,15,20 Calendar
+		 * Handling WebTable Pagination Handling Linkedin/FB/Insta : Infinite scrolling
+		 * food delivery carousel
 		 * 
-		 * */
-		
-		//use cases : For Loop
-		
-		/*1. When number of iteration are fixed
-		 * Dropdown : Month : 1 to 12
-		 * Footer links
-		 * Table columns
-		 * Array, ArrayList :- (fixed size data)
-		 * Reading Excel
-		 * Retry Logic : Count = 3
-		 * Dropdown = Country 1 to 233
-		 * */
+		 */
+
+		// use cases : For Loop
+
+		/*
+		 * 1. When number of iteration are fixed Dropdown : Month : 1 to 12 Footer links
+		 * Table columns Array, ArrayList :- (fixed size data) Reading Excel Retry Logic
+		 * : Count = 3 Dropdown = Country 1 to 233
+		 */
+
+		System.out.println("-----------------------Do While loop------------------------------");
+
+		// do-while loop
+		// 1 to 10:
+
+		int n = 1;
+		do {
+			System.out.print(n + " ");
+			n++;
+		} while (n <= 10);
+
+		System.out.println("------------------------------------------------------------------");
+
+		// use cases : Do While Loop
+
+		/*
+		 * Wait for webelement : Element in on the page //do{ // click on element ///}
+		 * while(!element is displayed)
+		 */
+
 	}
 
 }
