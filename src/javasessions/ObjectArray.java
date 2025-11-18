@@ -24,9 +24,12 @@ public class ObjectArray {
 		empData[2] = 34.44;
 		empData[3] = 'f';
 		empData[4] = true;
-		empData[5]=true; // AIOB
+		//empData[5]=true; // AIOB
 
 		System.out.println(Arrays.toString(empData));
+		
+		
+		
 
 		System.out.println(empData.length);
 		System.out.println(empData[0]);
