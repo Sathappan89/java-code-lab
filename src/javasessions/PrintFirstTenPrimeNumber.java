@@ -21,7 +21,7 @@ public class PrintFirstTenPrimeNumber {
 				//If prime, print it
 				if(isPrime) {
 					System.out.println("Prime number " + count + "  = " +num+ " ");
-					count++;
+					count++; 
 				}
 			num++;
 		}
