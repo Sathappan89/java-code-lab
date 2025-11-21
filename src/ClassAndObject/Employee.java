@@ -4,6 +4,7 @@ public class Employee {
 	
 	
 	//Data Members = Class Variable
+	//object vaiable / instance variable
 	String name;
 	int age;
 	String city;
@@ -19,7 +20,7 @@ public class Employee {
 		//class : data members [variable, methods]
 		
 		//Create the object of the class : using new keyword
-		
+		//instance of the class
 		
 		Employee e = new Employee();
 		
