@@ -10,7 +10,7 @@ public class Car {
 
 	// 2. Static Variable/Class Variable: will never be part of the object
 	// JVM will create only one common copy for the static variables
-	// CMA : Common Memory Allocation/ Permanent Generation - Metaspace
+	// CMA : Common Memory Allocation/ Permanent Generation - Meta space
 	static final int wheels = 4;
 
 	public static void main(String[] args) {
