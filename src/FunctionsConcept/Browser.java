@@ -64,6 +64,27 @@ public class Browser {
 
 	}
 
+	
+	
+	public boolean initBrowser1(String brwName) {
+		
+		boolean flag = false;
+		
+		switch (brwName.trim().toLowerCase()) {
+		case "chrome":
+			return true;
+		case "firefox":
+			return true;
+		case "ie":
+			return true;
+		default:
+			System.out.println("browser is not found.." + brwName);
+			return false;
+		}
+		
+	}
+	
+	
 	public static void main(String[] args) {
 
 		Browser br = new Browser();
@@ -86,6 +107,10 @@ public class Browser {
 			System.out.println("browser is not found...no need to enter the url..");
 		}
 
+		boolean fg=br.initBrowser1("chrome");
+		System.out.println(fg);
+		
+		
 	}
 
 }
