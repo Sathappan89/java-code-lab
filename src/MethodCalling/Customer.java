@@ -2,24 +2,21 @@ package MethodCalling;
 
 public class Customer {
 
-	static Customer obj;
+	//static Customer obj;
 
 	public void m1() {
 		System.out.println("m1 method");
-		Customer.t1();
 	}
 
-	public static void t1() { // class parameter
+	public static void t1(Customer ob) { // class parameter
 		System.out.println("t1 method");
-		obj.m1();
+		ob.m1();
 	}
 
 	public static void main(String[] args) {
 
-		obj = new Customer();
-		obj.m1();
-
-		Customer.t1(); // obj - reference
+		Customer obj = new Customer();
+		Customer.t1(obj); // obj - reference
 						// call by reference
 
 	}
