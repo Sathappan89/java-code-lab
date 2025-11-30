@@ -21,6 +21,12 @@ public class TestHospital {
 		fh.medicalTraining();
 		fh.oncologyService();
 		
+		fh.medicalRND();
+		USMedical.billing();
+		FortisHospital.billing();
+		
+		
+		fh.medicalPolicy();
 		//Java will not allow to create interface object creation - Because interface will have only method body(i.e abstract)
 		//Example : USMedical us=new USMedical();
 		
@@ -40,6 +46,7 @@ public class TestHospital {
 		us.entService();
 		us.physioServices();
 		us.orthoServices();
+		us.covidVaccination();
 		//us.oncologyService(); - Reference type check will fail
 		//us.medicalTraining(); - Individual method of FortisHospital will be failed by reference type check
 		
@@ -51,6 +58,54 @@ public class TestHospital {
 		uk.oncologyService();
 		uk.pediaService();
 		uk.emergencyServices();
+		uk.covidVaccination();
+		
+		//Very importance interview question
+		//interface to interface casting:
+		USMedical usa = new FortisHospital();
+		UKMedical unm=(UKMedical)(usa);
+		unm.oncologyService();
+		unm.pediaService();
+		usa.dentalService();
+		usa.entService();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 

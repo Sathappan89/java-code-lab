@@ -1,5 +1,5 @@
 package OOP_InterfaceConcept;
-public class FortisHospital implements USMedical,UKMedical,IndianMedical{
+public class FortisHospital extends Hospital implements USMedical,UKMedical,IndianMedical{
 	
 /*The type FortisHospital must implement the inherited abstract method*/	
 	
@@ -65,6 +65,21 @@ public class FortisHospital implements USMedical,UKMedical,IndianMedical{
 	
 	public void optServices() {
 		System.out.println("FH-----optServices");
+	}
+	
+	
+	public void covidVaccination() {
+		System.out.println("WHO---Covid Vaccinations");
+	}
+	
+	//Method Hiding
+	public static void billing() {
+		System.out.println("USM--Billing");
+	}
+	
+	@Override
+	public void medicalPolicy() {
+		System.out.println("FH-----medical policy");
 	}
 	
 }

@@ -1,6 +1,6 @@
 package OOP_InterfaceConcept;
 
-public interface UKMedical {
+public interface UKMedical extends WHO{
 	
 	public void oncologyService();
 	
