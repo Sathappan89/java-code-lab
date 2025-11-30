@@ -2,6 +2,11 @@ package OOP_InterfaceConcept;
 
 public interface USMedical extends WHO{
 
+	//interface vars are by default static and final in nature
+	
+	int min_fee=10;
+	
+	
 	// abstract method :
 	// no method body, only method declaration
 	// only method prototype
@@ -19,6 +24,11 @@ public interface USMedical extends WHO{
 
 	public void orthoServices();
 	
+	//can have private method
+	private void budget() {
+		System.out.println("USM--budget");
+	}
+	
 	//after JDK 1.8, two major changes:
 	
 	
@@ -32,5 +42,8 @@ public interface USMedical extends WHO{
 	//can be overriden
 	default void medicalPolicy() {
 		System.out.println("USM-----medical policy");
+		budget();
 	}
+	
+	//Example - Testng leaner are full of default
 }

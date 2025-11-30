@@ -1,6 +1,8 @@
 package OOP_InterfaceConcept;
 public class FortisHospital extends Hospital implements USMedical,UKMedical,IndianMedical{
 	
+	static final int min_fee=100;
+	
 /*The type FortisHospital must implement the inherited abstract method*/	
 	
 	//US
@@ -72,10 +74,10 @@ public class FortisHospital extends Hospital implements USMedical,UKMedical,Indi
 		System.out.println("WHO---Covid Vaccinations");
 	}
 	
-	//Method Hiding
-	public static void billing() {
-		System.out.println("USM--Billing");
-	}
+//	//Method Hiding
+//	public static void billing() {
+//		System.out.println("USM--Billing");
+//	}
 	
 	@Override
 	public void medicalPolicy() {

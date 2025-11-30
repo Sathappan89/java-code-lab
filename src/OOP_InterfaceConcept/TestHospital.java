@@ -23,7 +23,7 @@ public class TestHospital {
 		
 		fh.medicalRND();
 		USMedical.billing();
-		FortisHospital.billing();
+		//FortisHospital.billing();
 		
 		
 		fh.medicalPolicy();
@@ -35,6 +35,18 @@ public class TestHospital {
 		/* Selenium 
 		 * WebDriver a = new ChromeDriver();
 		 * */
+		
+		
+		USMedical.billing();
+		System.out.println(	USMedical.min_fee);
+		
+		//FortisHospital.billing(); 
+		System.out.println(	FortisHospital.min_fee);
+		
+		//USMedical.min_fee=100; //static & final in nature
+		
+		
+		
 		
 		System.out.println("----Top/Up Casting----");
 		System.out.println();
