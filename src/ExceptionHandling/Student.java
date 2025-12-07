@@ -8,14 +8,14 @@ public class Student {
 		if (studentName.equals("divya")) {
 
 			try {
-				int i = 9 / 3;
+				int i = 9 / 0;
 				return 90;
 			} catch (ArithmeticException e) {
 				return 80;
 				// immediate return
 			} finally {
 				System.out.println("hi");
-				return 65;
+				//return 65;
 			}
 
 		} else if (studentName.equals("priti")) {
