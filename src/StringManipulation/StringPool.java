@@ -25,7 +25,7 @@ public class StringPool {
 		String s6 = "testing";
 
 		/* Very Important Question */
-		String t1 = new String("automation"); // 2 objects will be created
+		String t1 = new String("automation"); // 2 objects will be created //2: heap(object) + scp(value/object)
 		String t2 = "automation"; // 0 object will be created but t2 refer to SCP
 
 		String r1 = null;
@@ -54,6 +54,10 @@ public class StringPool {
 		
 		StringBuilder sb = new StringBuilder("Selenium");
 		System.out.println(sb.append(" automation"));
+		
+		//
+		int i=10;
+		int j=10;
 		
 	}
 
