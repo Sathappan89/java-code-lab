@@ -1,5 +1,7 @@
 package StringManipulation;
 
+import java.util.Arrays;
+
 public class StringMethods {
 	public static void main(String[] args) {
 		String str = "hi this is my java code and i am so happy";
@@ -77,13 +79,76 @@ public class StringMethods {
 			System.out.println(false);
 		}
 
-		
-		/*Very famous interview question*/
+		/* Very famous interview question */
 		String x = "hello selenium";
 		x.concat("automation");
 		System.out.println(x);
-		
-		String y= "hello selenium";
-		String hs=y.concat(" automation");
+
+		String y = "hello selenium";
+		String hs = y.concat(" automation");
 		System.out.println(hs);
-}}
+
+		// substring:
+		String orderMesg = "my order id is 12345";
+		System.out.println(orderMesg.substring(6));
+		System.out.println(orderMesg.substring(0, 10));
+		System.out.println(orderMesg.substring(orderMesg.indexOf("is") + 2, orderMesg.length()).trim());
+
+		// split
+		String lang = "java-python-ruby-playscript";
+		String lg[] = lang.split("-");
+		System.out.println(lg[0]);
+		System.out.println(Arrays.toString(lg));
+
+		/* interview questions */
+		String top = "xXtestingXxXautomationXXxXseleniumxXapplicationX";
+		String tp[] = top.split("xX");
+		System.out.println(tp[0]); // nothing
+		System.out.println(tp[0].length()); // 0
+
+		System.out.println(tp[1]); // testingX
+		System.out.println(tp[2]); // automationXX
+		System.out.println(tp[3]); // selenium
+		System.out.println(tp[4]); // applicationX
+
+		System.out.println(Arrays.toString(tp)); // [, testingX, automationXX, selenium, applicationX]
+
+		//
+		String pop = "testing | automation | selenium | Loginpage";
+		String p[] = pop.split("|");
+		String p1[] = pop.split("\\|");
+		System.out.println(p[0]);// t
+		System.out.println(p1[0]);// testing
+
+		//
+		String st = "cucumberBDD.automation.selenium.LoginPage";
+		String sg[] = st.split(".");
+		// System.out.println(sg[0]); //java.lang.ArrayIndexOutOfBoundsException
+
+		String fg[] = st.split("\\.");
+		System.out.println(fg[0]); // cucumberBDD
+
+		//
+		String myMesg = "I love \"Java\" Programming"; // "I love "Java" Programming"
+
+		System.out.println(myMesg);
+
+		// Selenium xpath
+		String xpath = "//input[@value=\"Login\"]";
+		System.out.println(xpath);
+
+		String testing = "I love 'coding' in Java"; // I love 'coding' in Java
+		System.out.println(testing);
+
+		getScoreCard("viratKohli");
+
+	}
+
+	// Dynamic X-Path
+	public static void getScoreCard(String playerName) {
+		String xpath = "//input[text()='" + playerName + "']";
+		System.out.println(xpath); // input[text()='ViratKohli']
+
+	}
+
+}
