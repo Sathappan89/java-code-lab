@@ -141,6 +141,8 @@ public class StringMethods {
 		System.out.println(testing);
 
 		getScoreCard("viratKohli");
+		
+		studentMark("99");
 
 	}
 
@@ -150,5 +152,12 @@ public class StringMethods {
 		System.out.println(xpath); // input[text()='ViratKohli']
 
 	}
+	
+	
+	public static void studentMark(String marks) {
+		String xpath = "//input[testMark='"+marks+"']";
+		System.out.println(xpath);
+	}
+	
 
 }
