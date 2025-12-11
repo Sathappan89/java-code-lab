@@ -3,22 +3,22 @@ public class StringReverse {
 	public static String StringRev(String str) {
 
 		/** null check **/
-		if (str == null) {
+		if (str == null) { //o(1)
 			throw new RuntimeException("str is null");
 		}
 
-		/** length check **/
+		/** length check **/  //o(1)
 		if (str.length() == 1) {
 			return str;
 		}
 
-		// length check==0
+		// length check==0 //o(1)
 		if (str.length() == 0) {
 			return str;
 		}
 
-		String rev = "";
-		for (int i = str.length() - 1; i >= 0; i--) {
+		String rev = ""; 
+		for (int i = str.length() - 1; i >= 0; i--) { //o(n)-linear execution
 			rev = rev + str.charAt(i);
 		}
 
@@ -37,5 +37,9 @@ public class StringReverse {
 //		StringBuffer sbf = new StringBuffer("selenium");
 //		System.out.println(sbf.reverse());
 
+		
+		//testing automation selenium - Don't change the possible
+		//split , reverse and append 
+		
 	}
 }
