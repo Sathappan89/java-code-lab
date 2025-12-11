@@ -52,7 +52,6 @@ public class ConvertDataConcept {
 		String tempVal = String.valueOf(isTemp); // "true"
 		System.out.println(tempVal.length()); // 4
 		
-		
 		//int to String:
 		int price = 1000;
 		String priceVal = price+"";
