@@ -41,8 +41,10 @@ public class ArrayListGenerics {
 		//
 		StringBuilder sb1 = new StringBuilder("java");
 		StringBuilder sb2 = new StringBuilder("java");
+		StringBuffer sb3=new StringBuffer("java");
 		System.out.println(sb1.equals(sb2)); // false -- It is proper decent for string compare
 		System.out.println(sb1.toString().equals(sb2.toString())); // true -- we need to use toString method to compare																	// object
+		System.out.println(sb1.toString().equals(sb3.toString()));//true
 		System.out.println(sb1 == sb2); // false
 
 	}
