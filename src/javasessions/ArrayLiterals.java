@@ -21,7 +21,7 @@ public class ArrayLiterals {
 		i[0] = 10;
 		i[2] = 20;
 
-//		System.out.println(Arrays.toString(i));
+		System.out.println(Arrays.toString(i));
 
 		String lang[] = { "Java", "JS", "Python", "TS" };
 		System.out.println(Arrays.toString(lang));

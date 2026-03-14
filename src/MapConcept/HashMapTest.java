@@ -79,7 +79,7 @@ public class HashMapTest {
 		sgMap.put("divya", "Dev Manager");
 		sgMap.put("ravi", "SDET1");
 		sgMap.put("naveen", "CT0");
-		sgMap.put(null, "CEO");
+		//sgMap.put(null, "CEO");
 
 		System.out.println(sgMap);
 		System.out.println(sgMap.size());
@@ -90,7 +90,7 @@ public class HashMapTest {
 		stMap = new LinkedHashMap<String, String>();
 		// Sequence code
 		stMap = new TreeMap<String, String>();
-		// Sorted code
+		// Sorted code //ascending order
 
 	}
 

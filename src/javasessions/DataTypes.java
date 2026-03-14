@@ -109,7 +109,10 @@ public class DataTypes {
 
 		char test2 = 65;
 		System.out.println(test2);
-
+		
+		int x3 = 10;
+		Integer y3 = x3;   // autoboxing
+		System.out.println(y3);
 	}
 
 }
